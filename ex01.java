@@ -10,3 +10,13 @@ public class Funcionario {
         return salario;
     }
 }
+class FuncionarioTeste {
+    public static void main(String[] args) {
+        Funcionario f = new Funcionario();
+        f.nome = "Carlos";
+        double salarioFinal = f.calculaSalario(8500);
+
+        System.out.println("Funcionário: " + f.nome);
+        System.out.println("Salário calculado: R$" + salarioFinal);
+    }
+}
